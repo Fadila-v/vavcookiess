@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookiess Vaa</title>
-    <!-- Menghubungkan huruf Poppins dan file CSS (pertemuan 4) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookiess Vaa — Toko Cookies Terhits di Purwokerto</title>
+  
+  <!-- Menghubungkan huruf Poppins (Google Fonts) & file CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- HEADER: nama usaha dan menu -->
   <header>
+    <span class="badge-header">✨ Freshly Baked Everyday ✨</span>
     <h1>Cookiess Vaa</h1>
     <p><em>Toko Cookies terhits di Purwokerto</em></p>
     <nav>
-      <a href="#Profile">Profile</a> |
-      <a href="#Product">Product and Pricelist</a> |
-      <a href="#Contact">Contact</a> |
+      <a href="#Profile">Profile</a>
+      <a href="#Product">Product &amp; Pricelist</a>
+      <a href="#Contact">Contact</a>
       <a href="#Location">Location</a>
     </nav>
   </header>
@@ -32,111 +31,190 @@
     <!-- BAGIAN TENTANG -->
     <section id="Profile">
       <h2>Profile</h2>
-      <p>Cookiess Vaa ialah usaha cookiess yang dikelola oleh
-         <strong>Fadila Rahmadani</strong> since 2025.</p>
+      <p class="intro-text">
+        <strong>Cookiess Vaa</strong> ialah usaha cookies rumahan premium yang dikelola oleh 
+        <strong>Fadila Rahmadani</strong> since 2025. Setiap keping dipanggang hangat dengan takaran pas untuk menemani waktu santaimu.
+      </p>
       
-      <div style="text-align: center;">
-        <img src="image/cookies 1.jpg" alt="Cookiess 1">
+      <div class="hero-img-wrapper">
+        <img src="image/cookies 1.jpg" alt="Cookiess Vaa Signature">
       </div>
 
-      <h3>Mengapa Memilih Kami?</h3>
-      <ul>
-        <li>Cookies lezat dengan perpaduan rasa yang istimewa</li>
-        <li>Dibuat dari bahan-bahan berkualitas dan diolah dengan penuh perhatian</li>
-        <li>Harga terjangkau</li>
-      </ul>
+      <div class="two-columns">
+        <!-- Daftar Keunggulan dengan Ikon Ceklis -->
+        <div class="info-box">
+          <h3>Mengapa Memilih Kami?</h3>
+          <ul class="checklist">
+            <li>Cookies lezat dengan perpaduan rasa yang istimewa</li>
+            <li>Dibuat dari bahan-bahan berkualitas dan diolah penuh perhatian</li>
+            <li>Harga terjangkau &amp; ramah di kantong</li>
+            <li>Dipanggang segar setiap hari (<em>fresh from the oven</em>)</li>
+          </ul>
+        </div>
 
-      <h3>Cara Pemesanan</h3>
-      <ol>
-        <li>Pilih produk dan jumlah</li>
-        <li>Hubungi kami melalui WhatsApp</li>
-        <li>Lakukan pembayaran, pesanan dikirim</li>
-      </ol>
+        <!-- Daftar Cara Pemesanan Bernomor Rapi -->
+        <div class="info-box">
+          <h3>Cara Pemesanan</h3>
+          <ol class="step-list">
+            <li>Pilih varian produk dan jumlah pesanan</li>
+            <li>Hubungi kami melalui WhatsApp atau isi form di bawah</li>
+            <li>Lakukan pembayaran, pesanan langsung diproses &amp; dikirim</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <!-- BAGIAN PRODUK -->
     <section id="Product">
       <h2>Product and Pricelist</h2>
       <p>Berikut adalah daftar varian cookies favorit kami:</p>
-      <table>
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>Produk</th>
-            <th>Berat</th>
-            <th>Harga</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Cookiess Chococipp</td>
-            <td>25 g</td>
-            <td>Rp20.000</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Cookiess Chocolate</td>
-            <td>50 g</td>
-            <td>Rp30.000</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Cookiess Red Velvet</td>
-            <td>25 g</td>
-            <td>Rp25.000</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="galeri-produk">
-        <p><img src="image/Cookies Chocochipp.jpg" alt="Cookies Chocoipp"></p>
-        <p><img src="image/cookies chocolate.jpg" alt="Cookies Chocolate"></p>
-        <p><img src="image/Cookies red velvet.jpg" alt="Cookies red velvet"></p>
+      
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Produk</th>
+              <th>Berat</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Cookiess Chococipp</strong></td>
+              <td><span class="badge-berat">25 g</span></td>
+              <td class="harga">Rp20.000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Cookiess Chocolate</strong></td>
+              <td><span class="badge-berat">50 g</span></td>
+              <td class="harga">Rp30.000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Cookiess Red Velvet</strong></td>
+              <td><span class="badge-berat">25 g</span></td>
+              <td class="harga">Rp25.000</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-          <!-- Tempat video YouTube: tempel kode iframe dari YouTube di sini -->
+      <!-- Galeri Kartu Produk -->
+      <div class="galeri-produk">
+        <div class="produk-card">
+          <div class="img-box">
+            <img src="image/Cookies Chocochipp.jpg" alt="Cookies Chocochipp">
+          </div>
+          <div class="produk-caption">
+            <h4>Cookiess Chococipp</h4>
+            <span>25 g • Rp20.000</span>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <div class="img-box">
+            <img src="image/cookies chocolate.jpg" alt="Cookies Chocolate">
+          </div>
+          <div class="produk-caption">
+            <h4>Cookiess Chocolate</h4>
+            <span>50 g • Rp30.000</span>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <div class="img-box">
+            <img src="image/Cookies red velvet.jpg" alt="Cookies Red Velvet">
+          </div>
+          <div class="produk-caption">
+            <h4>Cookiess Red Velvet</h4>
+            <span>25 g • Rp25.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat video YouTube -->
+      <div class="media-box">
+        <h3>intip Proses &amp; Review Kami</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-5qP6a1xnyA?si=MiUCoTXbLqIWr6Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
 
     <!-- BAGIAN KONTAK -->
     <section id="Contact">
-      <h2>Contact</h2>
-      <p>Hubungi kami untuk pemesanan atau pertanyaan seputar produk:</p>
-      <p>
-        <a class="tombol-wa" href="https://wa.me" target="_blank">Pesan via WhatsApp</a>
-        <a class="tombol-ig" href="https://instagram.com" target="_blank">Pesan via Instagram</a>
-      </p>
+      <h2>Contact &amp; Order</h2>
+      <p>Hubungi kami langsung untuk pemesanan cepat atau pertanyaan seputar produk:</p>
+      
+      <div class="social-buttons">
+        <a class="tombol-wa" href="https://wa.me" target="_blank">💬 Pesan via WhatsApp</a>
+        <a class="tombol-ig" href="https://instagram.com" target="_blank">📸 Pesan via Instagram</a>
+      </div>
 
-      <form action="#" method="post">
-        <label for="nama">Nama</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
+      <form action="#" method="post" class="order-form">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu..." required>
+        </div>
 
-        <label for="wa">Nomor WhatsApp</label><br>
-        <input type="tel" id="wa" name="wa" placeholder="0812..." required><br><br>
+        <div class="form-group">
+          <label for="wa">Nomor WhatsApp</label>
+          <input type="tel" id="wa" name="wa" placeholder="Contoh: 081234567890" required>
+        </div>
 
-        <label for="pesan">Pesan</label><br>
-        <textarea id="pesan" name="pesan" rows="4"></textarea><br><br>
+        <!-- Fitur Ceklis Pilihan Varian Cookies -->
+        <div class="form-group">
+          <label>Pilih Varian Cookies (Bisa centang lebih dari satu):</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item">
+              <input type="checkbox" name="varian" value="Chococipp">
+              <span class="checkmark"></span>
+              <span>Cookiess Chococipp (Rp20.000)</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="varian" value="Chocolate">
+              <span class="checkmark"></span>
+              <span>Cookiess Chocolate (Rp30.000)</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="varian" value="Red Velvet">
+              <span class="checkmark"></span>
+              <span>Cookiess Red Velvet (Rp25.000)</span>
+            </label>
+          </div>
+        </div>
 
-        <button type="submit">Kirim</button>
+        <div class="form-group">
+          <label for="pesan">Catatan / Jumlah Pesanan</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Contoh: Chococipp 2 pcs, Red Velvet 1 pcs..."></textarea>
+        </div>
+
+        <button type="submit">Kirim Pesanan ✨</button>
       </form>
     </section>
 
     <!-- BAGIAN LOKASI -->
     <section id="Location">
       <h2>Location</h2>
-      <p>Ingin mengambil pesanan langsung atau mampir ke tempat kami? Kunjungi lokasi kami di:</p>
-      <p><strong>Jl. Raya Sumbang No. 10, Banyumas, Jawa Tengah</strong><br>Buka setiap hari pukul 09.00 – 20.00 WIB</p>
+      <div class="location-info">
+        <p>Ingin mengambil pesanan langsung atau mampir ke tempat kami? Kunjungi lokasi kami di:</p>
+        <div class="address-card">
+          <p><strong>📍 Jl. Raya Sumbang No. 10, Banyumas, Jawa Tengah</strong></p>
+          <p>🕒 Buka setiap hari pukul <strong>09.00 – 20.00 WIB</strong></p>
+        </div>
+      </div>
 
-       <!-- Tempat peta: tempel kode iframe dari Google Maps di sini -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7466615497656!2d109.2563441115027!3d-7.38226287263716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f1644d5bd1d%3A0xf25d859701dc9b18!2sKawungcarang%20Resort!5e0!3m2!1sid!2sid!4v1793328918277!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <!-- Tempat peta Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7466615497656!2d109.2563441115027!3d-7.38226287263716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f1644d5bd1d%3A0xf25d859701dc9b18!2sKawungcarang%20Resort!5e0!3m2!1sid!2sid!4v1793328918277!5m2!1sid!2sid" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </section>
 
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Cookiess Vaa. Jl. Raya Sumbang No. 10, Banyumas.</p>
+    <p>&copy; 2026 <strong>Cookiess Vaa</strong> • Jl. Raya Sumbang No. 10, Banyumas.</p>
+    <small>Made with love &amp; chocolate chips 🍪</small>
   </footer>
 
 </body>
